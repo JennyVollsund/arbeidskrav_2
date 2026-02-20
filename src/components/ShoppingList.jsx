@@ -11,5 +11,5 @@ export default function ShoppingList({ items, setItems }) {
                 ))}
             </ul>
         </section>
-    );
+    )
 }

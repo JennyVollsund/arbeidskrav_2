@@ -5,8 +5,8 @@ export default function ShoppingItem({ item, setItems }) {
             prev.map((i) =>
                 i.id === item.id ? { ...i, purchased: !i.purchased } : i
             )
-        );
-    };
+        )
+    }
 
     const changeQuantity = (e) => {
         const value = Number(e.target.value)
@@ -16,8 +16,8 @@ export default function ShoppingItem({ item, setItems }) {
             prev.map((i) =>
                 i.id === item.id ? { ...i, quantity: value } : i
             )
-        );
-    };
+        )
+    }
 
     return (
         <li>
@@ -37,5 +37,5 @@ export default function ShoppingItem({ item, setItems }) {
                 onChange={changeQuantity}
             ></input>
         </li>
-    );
+    )
 }
